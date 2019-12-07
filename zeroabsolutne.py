@@ -1,4 +1,5 @@
-from teamwork.teamwork.liczba import Number
+from teamwork.zadaniePoranne.liczba import Number
+
 
 class ZeroAbsolutne(Number):
 
@@ -9,9 +10,9 @@ class ZeroAbsolutne(Number):
         print("Ucz sie do cholery!")
 
     def __str__(self):
-        print("Jestem Zerem!")
+        return("Jestem Zerem!")
 
 
 y = ZeroAbsolutne()
-print(y.reklama())
+y.reklama()
 print(y)
