@@ -9,6 +9,7 @@
 # elem.send_keys(Keys.RETURN)
 # assert "No results found." not in driver.page_source
 # driver.close()
+import unittest
 from datetime import time
 
 from selenium import webdriver
@@ -24,6 +25,10 @@ elem.submit()
 elem = driver.find_element_by_name("q")
 elem.click()
 dropdown = select.first_selected_option()
+
+
+if (__name__== '__main__'):
+    unittest.main()
 # elem.clear()
 # driver.close()
 
